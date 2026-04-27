@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addItem } from "../features/inventory/inventorySlice";
+import { addItem } from "../features/inventory/InventorySlice";
 
 export default function FormBarang() {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ export default function FormBarang() {
     setName("");
     setQty("");
   };
-
+  
   return (
     <form onSubmit={handleSubmit}>
       <input
